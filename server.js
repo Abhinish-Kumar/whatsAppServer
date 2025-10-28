@@ -17,7 +17,7 @@ connectDB();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://whatsapp-r6vb.onrender.com",
     credentials: true,
   },
 });
@@ -162,3 +162,4 @@ io.on("connection", async (socket) => {
 server.listen(PORT, () =>
   console.log("🚀 Server running on http://localhost:4400")
 );
+
